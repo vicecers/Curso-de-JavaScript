@@ -1,1 +1,1 @@
-
+Es fundamental realizar los programas propuestos de forma individual. Solo con ver los ejemplos o los problemas resueltos por otras personas no es suficiente para entender los fundamentos de la programación y llegar a programar aplicaciones, ¡ ánimo !.
