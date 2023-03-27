@@ -45,6 +45,15 @@ function saludar() {
   console.log("Hola 👋")
 }
 ```
-  
-  
+### Ámbito y let
+    - Hasta ahora hemos creado variables con var. Estas tienen ámbito de función: pueden ser accedidas desde la función donde fueron declaradas (y funciones interiores).
+```js
+ var nombre = "Juan"
+ function saludar() {
+    console.log("Hola " + nombre)
+}
+saludar() // "Hola Juan"
+```
+
+
   
