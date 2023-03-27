@@ -96,7 +96,13 @@ persona += " Núñez" // 🤔
 }
 console.log(nombre) // ⚠️                          
 ```                          
-Por último, las variables creadas con const no son elevadas.        
+- Por último, las variables creadas con const no son elevadas.        
+                          
+### Funciones
+# Declaración de funciones
+- En JavaScript hay 3 formas de crear funciones. Vamos a explorarlas.
+- La primera forma es a través de las funciones declaradas.
+- Estas requieren un identificador y son elevadas.
                           
                           
                           
