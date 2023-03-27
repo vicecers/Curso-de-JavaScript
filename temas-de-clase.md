@@ -22,4 +22,19 @@
  #### Elevado (hoisting)
   - JavaScript es un lenguaje con tipos dinámicos, es decir, podemos asignar y reasignar diferentes tipos a una misma variable (de ahí el nombre: variable).
 
-
+  - Para hacerlo tenemos que utilizar dos fases diferentes: declaración e inicialización.
+```js
+var favorito // Declaracióm
+favorito = 66 // Inicialización
+favorito = "Juan" // Reasignación
+```
+    - Cuando creamos declaramos una variable, JavaScript le asigna el tipo _undefined_.
+  - Si intentamos referenciar una variable antes de ser declarada, ¿qué crees que ocurrirá?.
+  
+  ```js
+  console.log(nombre) // 🤔
+  var nombre = "Juan"
+  ```
+  
+  
+  
