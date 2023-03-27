@@ -20,9 +20,9 @@
   
   
  #### Elevado (hoisting)
-     - JavaScript es un lenguaje con tipos dinámicos, es decir, podemos asignar y reasignar diferentes tipos a una misma variable (de ahí el nombre: variable).
-
-   - Para hacerlo tenemos que utilizar dos fases diferentes: declaración e inicialización.
+ - JavaScript es un lenguaje con tipos dinámicos, es decir, podemos asignar y reasignar diferentes tipos a una misma variable (de ahí el nombre: variable).
+  
+- Para hacerlo tenemos que utilizar dos fases diferentes: declaración e inicialización.
 ```js
 var favorito // Declaracióm
 favorito = 66 // Inicialización
@@ -46,7 +46,7 @@ function saludar() {
 }
 ```
 ### Ámbito y let
-    - Hasta ahora hemos creado variables con var. Estas tienen ámbito de función: pueden ser accedidas desde la función donde fueron declaradas (y funciones interiores).
+ - Hasta ahora hemos creado variables con var. Estas tienen ámbito de función: pueden ser accedidas desde la función donde fueron declaradas (y funciones interiores).
 ```js
  var nombre = "Juan"
  function saludar() {
@@ -54,6 +54,18 @@ function saludar() {
 }
 saludar() // "Hola Juan"
 ```
+ - Sin embargo, si declaramos variables con let (ES2105), tenemos ámbito de bloque, es decir, solo pueden ser accedidas desde el bloque en el que se declararon, o bloques interiores.
 
-
-  
+ ```js
+{
+    let nombre = "Juan"
+}
+console.log(nombre) // nombre is not defined 
+```
+  - Este ámbito de bloque tiene sus ventajas. Por ejemplo al utilizarlo con estructuras de control y de flujo.
+ ```js
+  for (let i = 0; i <= 100; i++) {
+    console.log(i)
+}
+console.log(i) // i is not defined
+ ```
