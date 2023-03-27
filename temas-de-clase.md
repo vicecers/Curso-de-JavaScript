@@ -98,11 +98,33 @@ console.log(nombre) // ⚠️
 ```                          
 - Por último, las variables creadas con const no son elevadas.        
                           
-### Funciones
-# Declaración de funciones
+## Funciones
+### Declaración de funciones
 - En JavaScript hay 3 formas de crear funciones. Vamos a explorarlas.
 - La primera forma es a través de las funciones declaradas.
 - Estas requieren un identificador y son elevadas.
+```js
+function saludar() {
+  console.log("Hola me llamo Juan")
+}
+```
+- También podemos crear una expresión funcional, que consiste en asignar una función a una variable.         
+- Puede tener nombre o ser anónima.
+- Lo que se alza es la declaración, no la asignación.
+```js
+  const saludar = function () {
+  console.log("Hola me llamo Juan")
+}                          
+```                          
+- Por último, podemos crear una versión aún más acortada de una función anónima a través de las funciones flecha.
+- No disponen de contexto propio de this.
+- Disponen de retorno implícito, delimitadores opcionales y no se alzan.  
+```js
+const saludar = () => {
+  console.log("Hola me llamo Juan")
+}                          
+```                          
+#### Parámetros y argumentos
                           
                           
                           
