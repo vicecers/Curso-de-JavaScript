@@ -69,3 +69,22 @@ console.log(nombre) // nombre is not defined 
 }
 console.log(i) // i is not defined
  ```
+                          
+  - Además, al usar let tenemos un comportamiento mucho más estricto en el alzado (hoisting), algo que para muchos es otra ventaja.
+  ```js
+ // Cannot access 'nombre' before initialization 
+console.log(nombre) 
+let nombre = "Juan"
+```
+### Constantes
+-  Como ahora ya sabes, var y let permiten declarar variables dinámicas: puedes re-asociarlas a otro valor.
+-  Si queremos crear una asociación constante a un valor, podemos usar const para la creación de variables.
+```js
+const edad = 77;
+```                          
+                          
+                          
+                          
+
+                          
+                          
