@@ -20,7 +20,7 @@
   
   
  #### Elevado (hoisting)
-  - JavaScript es un lenguaje con tipos dinámicos, es decir, podemos asignar y reasignar diferentes tipos a una misma variable (de ahí el nombre: variable).
+     - JavaScript es un lenguaje con tipos dinámicos, es decir, podemos asignar y reasignar diferentes tipos a una misma variable (de ahí el nombre: variable).
 
    - Para hacerlo tenemos que utilizar dos fases diferentes: declaración e inicialización.
 ```js
