@@ -82,6 +82,21 @@ let nombre = "Juan"
 ```js
 const edad = 77;
 ```                          
+               
+- Al utilizar const nos aseguramos que no ocurrirá ninguna re-asignacion a otro valor en esa variable.
+- Eso sí, usar constantes no significa que sean inmutables. Podemos mutar propiedades del valor asociado a la constante.
+```js
+const persona = "Juan"
+persona += " Núñez" // 🤔                                      
+```                          
+- En cuanto a su acceso, igual que con let disponemos de ámbito de bloque.
+```js
+{
+  const nombre = "Juan"
+}
+console.log(nombre) // ⚠️                          
+```                          
+Por último, las variables creadas con const no son elevadas.        
                           
                           
                           
